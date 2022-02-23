@@ -93,7 +93,7 @@ window.addEventListener('load', (event) => {
         const procent = document.querySelector(".procent")
         if (data == "html") {
             technology.textContent = "HTML"
-            description.textContent = "I use tags in accordance with W3C semantics and standards. Well-written HTML code is the starting point for the successful operation of web applications on the web. "
+            description.textContent = "I use tags in accordance with W3C semantics and standards. "
             content.style = "width: 80%"
             procent.textContent = "80%"
 

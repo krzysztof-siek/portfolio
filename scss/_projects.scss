@@ -12,8 +12,6 @@
         margin-bottom: 0;
     }
 
-
-
     .swiper-container {
         width: 100%;
         padding-top: 50px;
@@ -79,10 +77,6 @@
                 line-height: 20px;
                 padding-bottom: 20px;
 
-                .yellow {
-                    color: $yellow;
-                    font-weight: bold;
-                }
             }
         }
 
@@ -121,4 +115,13 @@
             background-color: $yellow;
         }
     }
+}
+
+.no-display {
+  visibility:hidden;
+}
+
+.yellow {
+  color: $yellow;
+  font-weight: bold;
 }

@@ -43,6 +43,7 @@ header {
                 font-size: $base-s *2;
                 font-weight: 700;
                 line-height: 45px;
+                margin: 10px 0 0 0;
 
                 span {
                     color: $yellow;
@@ -55,6 +56,7 @@ header {
                 line-height: 30px;
                 font-size: 30px;
                 margin-bottom: 50px;
+                margin-top: 0;
 
                 @media(min-width: 768px) {
                     line-height: 55px;
