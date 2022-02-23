@@ -64,12 +64,6 @@
          form.submit(function (e) {
              e.preventDefault();
          });
-         const formSent = document.querySelector('.form-sent')
-         formSent.classList.add('show')
-         const hideSentForm = () => {
-             formSent.classList.remove('show')
-         }
-         setTimeout(hideSentForm, 3000);
      }
  }
 
