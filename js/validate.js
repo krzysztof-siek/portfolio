@@ -1,10 +1,10 @@
-//  const helpMsgName = document.querySelector('.help-name')
-//  const helpMsgEmail = document.querySelector('.help-email')
-//  const helpMsgMessage = document.querySelector('.help-message')
-//  const form = document.querySelector('#contact-form');
-//  let name = document.getElementById('name')
-//  let email = document.getElementById('email')
-//  let message = document.getElementById('message')
+ const helpMsgName = document.querySelector('.help-name')
+ const helpMsgEmail = document.querySelector('.help-email')
+ const helpMsgMessage = document.querySelector('.help-message')
+ const form = document.querySelector('#contact-form');
+ let name = document.getElementById('name')
+ let email = document.getElementById('email')
+ let message = document.getElementById('message')
 
 //  const errors = {};
 
@@ -69,9 +69,9 @@
 
 
 
-//  export {
-//      validateName,
-//      validateEmail,
-//      validateMessage,
-//      validateForm,
-//  };
+ export {
+     validateName,
+     validateEmail,
+     validateMessage,
+     validateForm,
+ };
