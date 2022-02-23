@@ -1,9 +1,9 @@
-import {
-    validateName,
-    validateEmail,
-    validateMessage,
-    validateForm,
-} from './validate.js';
+// import {
+//     validateName,
+//     validateEmail,
+//     validateMessage,
+//     validateForm,
+// } from './validate.js';
 
 import {
     showBackToUpButton,
@@ -142,14 +142,14 @@ window.addEventListener('load', (event) => {
     }))
 
     // Form validation
-    const form = document.querySelector('#contact-form');
-    let name = document.getElementById('name')
-    let email = document.getElementById('email')
-    let message = document.getElementById('message')
-    name.addEventListener('blur', validateName);
-    email.addEventListener('blur', validateEmail);
-    message.addEventListener('blur', validateMessage)
-    form.addEventListener('submit', validateForm)
+    // const form = document.querySelector('#contact-form');
+    // let name = document.getElementById('name')
+    // let email = document.getElementById('email')
+    // let message = document.getElementById('message')
+    // name.addEventListener('blur', validateName);
+    // email.addEventListener('blur', validateEmail);
+    // message.addEventListener('blur', validateMessage)
+    // form.addEventListener('submit', validateForm)
     // End of validation
 
 
