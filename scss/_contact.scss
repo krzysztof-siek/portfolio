@@ -126,6 +126,7 @@
         padding-bottom: 50px;
         order: 1;
         width: 90%;
+        position: relative;
 
         @media(min-width:768px) {
             order: 2;
@@ -189,5 +190,16 @@
             color: green;
             font-size: 24px;
         }
+    }
+
+    .recaptcha {
+      color: red;
+      position: absolute;
+      bottom: -50px;
+      left:50px;
+      visibility: hidden;
+      &.show {
+        visibility: visible;
+      }
     }
   }

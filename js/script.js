@@ -156,5 +156,7 @@ window.onload = function() {
   recaptcha.required = true;
   recaptcha.oninvalid = function(e) {
     alert("Please check the box, \"I'm not a robot\" in the reCaptcha below.");
+    const error = document.querySelector('.recaptha');
+    error.classList.add('show');
   }
 }
