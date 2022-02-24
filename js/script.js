@@ -149,12 +149,12 @@ window.addEventListener('load', (event) => {
 
     resetText();
 
-    window.onload = function() {
-      var recaptcha = document.forms["contact-form"]["g-recaptcha-response"];
-      recaptcha.required = true;
-      recaptcha.oninvalid = function(e) {
-        alert("Please check the box, \"I'm not a robot\" in the reCaptcha below.");
-      }
-    }
+      
+    // var recaptcha = document.forms["contact-form"]["g-recaptcha-response"];
+    // recaptcha.required = true;
+    // recaptcha.oninvalid = function(e) {
+    //   alert("Please check the box, \"I'm not a robot\" in the reCaptcha below.");
+    // }
+   
 
 });
