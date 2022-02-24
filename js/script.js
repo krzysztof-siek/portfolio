@@ -155,10 +155,10 @@ window.onload = function() {
   var recaptcha = document.forms["contact-form"]["g-recaptcha-response"];
   recaptcha.required = true;
   recaptcha.oninvalid = function(e) {
-    alert("Please check the box, \"I'm not a robot\" in the reCaptcha below.");
     const error = document.querySelector('.recaptcha'); 
-    console.log('error');
-    
     error.classList.add('show');
+    setTimeout(() => {
+      error.classList.remove('show')
+    },2000);
   }
 }
