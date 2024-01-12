@@ -5,6 +5,20 @@ body {
     }
 }
 
+.language {
+  color: $white;
+  position: absolute;
+  right: 0;
+
+    .lang-change {
+      cursor: pointer;
+
+      &.active {
+        color: $yellow;
+      }
+    }
+}
+
 nav {
     background-color: $bgc;
 
@@ -15,7 +29,6 @@ nav {
         justify-content: space-between;
         align-items: center;
         padding: 10px;
-
 
         .nav-brand {
             z-index: 110;

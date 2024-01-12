@@ -15,6 +15,50 @@ import {
 
 window.addEventListener('load', (event) => {
 
+    i18next
+        .use(i18nextHttpBackend)
+        .init({
+            lng: 'pl',
+            backend: {
+                loadPath: '/assets/{{lng}}.json'
+            }
+        }, function(err, t) {
+            updatePlaceholders();
+        });
+
+    function updatePlaceholders() {
+        document.getElementById('message').setAttribute('placeholder', i18next.t('contact.message'));
+        document.getElementById('name').setAttribute('placeholder', i18next.t('contact.name'));
+    }
+
+    document.querySelectorAll('.lang-change').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          document.querySelectorAll('.lang-change').forEach(function(el) {
+            el.classList.remove('active');
+        });
+        this.classList.add('active');
+
+            changeLanguage(this.getAttribute('data-lang'));
+        });
+    });
+
+    function changeLanguage(lng) {
+        i18next.changeLanguage(lng);
+        setTimeout(() => {
+            updatePlaceholders();
+        }, 100);
+    }
+
+    i18next.on('languageChanged', () => {
+        updateContent();
+    });
+
+    function updateContent() {
+        document.querySelectorAll('[data-i18n]').forEach((element) => {
+            const key = element.getAttribute('data-i18n');
+            element.innerHTML = i18next.t(key);
+        });
+    }
 
     var swiper = new Swiper('.swiper-container', {
         effect: 'coverflow',

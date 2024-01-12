@@ -9,6 +9,13 @@
   <link rel="stylesheet" href="style.min.css">
   <link rel="stylesheet" href="./scss/swiper.min.css">
   <link rel="shortcut icon" type="image/png" sizes="32x32" href="./img//favicon.png">
+  <script src="https://unpkg.com/i18next@latest/i18next.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@1.3.1/i18nextHttpBackend.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/gumshoe/dist/gumshoe.polyfills.min.js"></script>
+  <script src="./js/swiper.min.js"></script>
+  <script src="./js/script.js" type="module"></script>
+  <link rel="stylesheet" href="scss/_navbar.scss">
+
 
 </head>
 
@@ -21,32 +28,36 @@
       <div class="limit-container">
         <div class="navbar">
           <div class="nav-brand">
-            <img src="./img/icon.png" alt="">
+            <img src="./img/icon.png" alt="icon">
           </div>
           <ul class="nav-links" id="nav-links">
-            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href=" #about" class="nav-link">About</a></li>
-            <li class="nav-item"><a href=" #skills" class="nav-link">Skills</a></li>
-            <li class="nav-item"><a href=" #projects" class="nav-link">Projects</a></li>
-            <li class="nav-item"><a href=" #contact" class="nav-link">Contact</a>
+            <li class="nav-item"><a href="#home" class="nav-link" data-i18n="menu.home">Home</a></li>
+            <li class="nav-item"><a href=" #about" class="nav-link" data-i18n="menu.about">About</a></li>
+            <li class="nav-item"><a href=" #skills" class="nav-link" data-i18n="menu.skills">Skills</a></li>
+            <li class="nav-item"><a href=" #projects" class="nav-link" data-i18n="menu.projects">Projects</a></li>
+            <li class="nav-item"><a href=" #contact" class="nav-link" data-i18n="menu.contact">Contact</a>
             </li>
           </ul>
+          <div class="language">
+            <span class="lang-change active" data-lang="pl">PL</span>
+            <span class="lang-change" data-lang="en">EN</span>
+          </div>
           <div class="nav-button">
             <div class="btn-line"></div>
             <div class="btn-line"></div>
             <div class="btn-line"></div>
-          </div>
+          </div>g
         </div>
       </div>
     </nav>
     <div class="limit-container">
       <div class="heading">
         <div class="img">
-          <img src="./img/developer-photo/header-img.png" alt="">
+          <img src="./img/developer-photo/header-img.png" alt=devPhoto>
         </div>
         <div class="heading-main">
           <h3 class="main-welcome">Hey!</h3>
-          <h1 class="main-name">I'm <span>Krzysiek</span></h1>
+          <h1 class="main-name" data-i18n="home.text1">I'm <span>Krzysiek</span></h1>
           <h2 class="main-prof">Front-end developer</h2>
           <a href="#contact" class="btn anim" id="animBtn">Hire Me</a>
           <div class="socials">
@@ -68,8 +79,8 @@
     <div class="limit-container">
       <div class="section-container">
         <div class="row">
-          <h3 class="row-title">About</h3>
-          <h4 class="row-subtitle">Read about me...</h4>
+          <h3 class="row-title" data-i18n="about.title">About</h3>
+          <h4 class="row-subtitle" data-i18n="about.subtitle">Read about me...</h4>
         </div>
         <div class="new-container">
           <div class="about-img">
@@ -77,19 +88,19 @@
           </div>
           <div class="about-info">
             <h2 class="title-text">Krzysztof Siek</h2>
-            <h3 class="info">My name is Krzysztof and i live in Poznań. I'm a Freelancer / Front-end
+            <h3 class="info" data-i18n="about.info">My name is Krzysztof and i live in Poznań. I'm a Freelancer / Front-end
               Developer.
               I create modern websites using Html, Css, Js and many frameworks. My pages are always
               crafted with attention to finer details and care of semantics. As a perfectionist I attach
               grate importance to the quality of the code. I constantly strive to develop and improve my
               skills to make my projects even better and better.
             </h3>
-            <h4 class="info">Determined, reliable, working with full commitment </h4>
-            <h5 class="info-yellow">If you are interested in cooperation, please contact me!</h5>
+            <h4 class="info" data-i18n="about.info2">Determined, reliable, working with full commitment </h4>
+            <h5 class="info-yellow" data-i18n="about.cooperation">If you are interested in cooperation, please contact me!</h5>
             <img src="./img/sign.png" class="sign" alt="sing img">
             <div class="btn-container">
-              <button class="btn download">Download cv</button>
-              <a href="#projects" class="btn">My projects</a>
+              <button class="btn download" data-i18n="buttons.downloadCv">Download cv</button>
+              <a href="#projects" class="btn" data-i18n="buttons.projects">My projects</a>
             </div>
           </div>
         </div>
@@ -98,9 +109,9 @@
   </section>
   <div class="modal-bg hide">
     <div class="modal-content">
-      <h3 class="modal-text">If you are a recruiter and would like to receive my CV, please use the contact form.
+      <h3 class="modal-text" data-i18n="about.modalText">If you are a recruiter and would like to receive my CV, please use the contact form.
       </h3>
-      <h5 class="modal-text">Best regards</h5>
+      <h5 class="modal-text" data-i18n="about.modalRegards">Best regards</h5>
       <i class="fas fa-times-circle fa-2x close-btn"></i>
     </div>
   </div>
@@ -108,25 +119,25 @@
   <div class="jumbotron">
     <div class="limit-container">
       <div class="row">
-        <h3 class="row-title">Interests:</h3>
-        <h4 class="row-subtitle">Because life is not just coding</h4>
+        <h3 class="row-title" data-i18n="interests.title">Interests:</h3>
+        <h4 class="row-subtitle" data-i18n="interests.subtitle">Because life is not just coding</h4>
       </div>
       <div class="new-container">
         <div class="icon">
           <img src="./img/interests-icons/travel.png" alt="travel">
-          <h5 class="interests">travel</h5>
+          <h5 class="interests" data-i18n="interests.travels">travels</h5>
         </div>
         <div class="icon">
           <img src="./img/interests-icons/music.png" alt="music">
-          <h5 class="interests">music</h5>
+          <h5 class="interests" data-i18n="interests.music">music</h5>
         </div>
         <div class="icon">
           <img src="./img/interests-icons/bike.png" alt="bike">
-          <h5 class="interests">bike</h5>
+          <h5 class="interests" data-i18n="interests.bike">bike</h5>
         </div>
         <div class="icon">
           <img src="./img/interests-icons/gym.png" alt="gym">
-          <h5 class="interests">gym</h5>
+          <h5 class="interests" data-i18n="interests.gym">gym</h5>
         </div>
       </div>
     </div>
@@ -136,34 +147,34 @@
   <section class="skills" id="skills">
     <div class="section-container">
       <div class="row">
-        <h3 class="row-title">Skills</h3>
-        <h4 class="row-subtitle">Technologies and tools that I use on a daily basis</h4>
+        <h3 class="row-title" data-i18n="skills.title">Skills</h3>
+        <h4 class="row-subtitle" data-i18n="skills.subtitle">Technologies and tools that I use on a daily basis</h4>
       </div>
       <div class="new-container">
         <div class="icons-container">
           <div class="skills-single-icon icon-1" data-icon="html">
-            <img src="./img/skills-icons/html.png" alt="">
+            <img src="./img/skills-icons/html.png" alt="html icon">
           </div>
           <div class="skills-single-icon" data-icon="css">
-            <img src="./img/skills-icons/css.png" alt="">
+            <img src="./img/skills-icons/css.png" alt="css icon">
           </div>
           <div class="skills-single-icon" data-icon="js">
-            <img src="./img/skills-icons/javascript.png" alt="">
+            <img src="./img/skills-icons/javascript.png" alt="js icon">
           </div>
           <div class="skills-single-icon angular" data-icon="angular">
-            <img src="./img/skills-icons/angular.png" alt="">
+            <img src="./img/skills-icons/angular.png" alt="angular icon">
           </div>
           <div class="skills-single-icon" data-icon="bootstrap">
-            <img src="./img/skills-icons/bootstrap.png" alt="">
+            <img src="./img/skills-icons/bootstrap.png" alt="bootstrap icon">
           </div>
           <div class="skills-single-icon" data-icon="sass">
-            <img src="./img/skills-icons/sass.png" alt="">
+            <img src="./img/skills-icons/sass.png" alt="sass icon">
           </div>
           <div class="skills-single-icon" data-icon="git">
-            <img src="./img/skills-icons/git.png" alt="">
+            <img src="./img/skills-icons/git.png" alt="git icon">
           </div>
           <div class="skills-single-icon" data-icon="rwd">
-            <img src="./img/skills-icons/rwd.png" alt="">
+            <img src="./img/skills-icons/rwd.png" alt="rwd icon">
           </div>
         </div>
         <div class="progress-container">
@@ -182,8 +193,8 @@
   <section class="projects" id="projects">
     <div class="section-container">
       <div class="row">
-        <h3 class="row-title">Projects</h3>
-        <h4 class="row-subtitle">List of my recently projects</h4>
+        <h3 class="row-title" data-i18n="projects.title">Projects</h3>
+        <h4 class="row-subtitle" data-i18n="projects.subtitle">List of my recently projects</h4>
       </div>
     </div>
     <!-- Swiper -->
@@ -195,10 +206,10 @@
             <img src="./img/projects/vodplus.png" alt="vodplus image">
           </div>
           <div class="details">
-            <h3 class="details-title">VODplus</h3>
-            <h4 class="details-subtitle">VODplus - search engine for movies and series - <span class="yellow">for MyLead</span></h4>
-            <p class="details-desc">I was <span class="yellow"> responsible for coding </span> most of the elements on the <span class="yellow">front</span> </p>
-            <p class="details-desc">year of execution - <span class="yellow">2021</span></p>
+            <h3 class="details-title" data-i18n="projects.vodPlus.title">VODplus</h3>
+            <h4 class="details-subtitle" data-i18n="projects.vodPlus.description">VODplus - search engine for movies and series - <span class="yellow">for MyLead</span></h4>
+            <p class="details-desc" data-i18n="projects.vodPlus.responsibility">I was <span class="yellow"> responsible for coding </span> most of the elements on the <span class="yellow">front</span> </p>
+            <p class="details-desc" data-i18n="projects.general.execution">year of execution - <span class="yellow">2021</span></p>
           </div>
           <div class="view-project">
             <a class="no-display" href="https://github.com/krzysztof-siek/portfolio-new" target="_blank" class="code"> <i class="fas fa-code"></i>GitHub<a>
@@ -211,10 +222,10 @@
             <img src="./img/projects/promolovers.png" alt="promolovers image">
           </div>
           <div class="details">
-            <h3 class="details-title">PromoLovers</h3>
-            <h4 class="details-subtitle">PromoLovers - Search engine for promotional coupons and promotions - <span class="yellow">for MyLead</span></h4>
-            <p class="details-desc">I was the <span class="yellow"> main person </span> responsible for the implementation of the front</span></p>
-            <p class="details-desc">year of execution - <span class="yellow">2021</span></p>
+            <h3 class="details-title" data-i18n="projects.promoLovers.title">PromoLovers</h3>
+            <h4 class="details-subtitle" data-i18n="projects.promoLovers.description">PromoLovers - Search engine for promotional coupons and promotions - <span class="yellow">for MyLead</span></h4>
+            <p class="details-desc" data-i18n="projects.general.responsibility">I was the <span class="yellow"> main person </span> responsible for the implementation of the front</span></p>
+            <p class="details-desc" data-i18n="projects.general.execution">year of execution - <span class="yellow">2021</span></p>
           </div>
           <div class="view-project">
             <a class="no-display" href="https://github.com/krzysztof-siek/portfolio-new" target="_blank" class="code"> <i class="fas fa-code"></i>GitHub<a>
@@ -227,10 +238,10 @@
             <img src="./img/projects/influencers.png" alt="influencers image">
           </div>
           <div class="details">
-            <h3 class="details-title">Influencers MyLead</h3>
-            <h4 class="details-subtitle">Influencers - website dedicated to influencers - <span class="yellow">for MyLead</span></h4>
-            <p class="details-desc">I was the <span class="yellow"> main person </span> responsible for the implementation of the front</span></p>
-            <p class="details-desc">year of execution - <span class="yellow">2020</span></p>
+            <h3 class="details-title" data-i18n="projects.influencers.title">Influencers MyLead</h3>
+            <h4 class="details-subtitle" data-i18n="projects.influencers.description">Influencers - website dedicated to influencers - <span class="yellow">for MyLead</span></h4>
+            <p class="details-desc" data-i18n="projects.general.responsibility">I was the <span class="yellow"> main person </span> responsible for the implementation of the front</span></p>
+            <p class="details-desc" data-i18n="projects.general.execution">year of execution - <span class="yellow">2020</span></p>
           </div>
           <div class="view-project">
             <a class="no-display" href="https://github.com/krzysztof-siek/portfolio-new" target="_blank" class="code"> <i class="fas fa-code"></i>GitHub<a>
@@ -243,10 +254,10 @@
             <img src="./img/projects/zamiensms.png" alt="zamiensms image">
           </div>
           <div class="details">
-            <h3 class="details-title">ZamienSms</h3>
-            <h4 class="details-subtitle">ZamienSms - Page where you can exchange SMS for money - <span class="yellow">for MyLead</span></h4>
-            <p class="details-desc">I was responsible for <span class="yellow">refreshing the design</span> of main page visible before logging in</span></p>
-            <p class="details-desc">year of execution - <span class="yellow">2020</span></p>
+            <h3 class="details-title" data-i18n="projects.zamiensms.title">ZamienSms</h3>
+            <h4 class="details-subtitle" data-i18n="projects.zamiensms.description">ZamienSms - Page where you can exchange SMS for money - <span class="yellow">for MyLead</span></h4>
+            <p class="details-desc" data-i18n="projects.zamiensms.responsibility">I was responsible for <span class="yellow">refreshing the design</span> of main page visible before logging in</span></p>
+            <p class="details-desc" data-i18n="projects.general.execution2">year of execution - <span class="yellow">2020</span></p>
           </div>
           <div class="view-project">
             <a class="no-display" href="https://github.com/krzysztof-siek/portfolio-new" target="_blank" class="code"> <i class="fas fa-code"></i>GitHub<a>
@@ -259,10 +270,10 @@
             <img src="./img/projects/cdaflix.png" alt="cdaflix image">
           </div>
           <div class="details">
-            <h3 class="details-title">CDAflix</h3>
-            <h4 class="details-subtitle">CDAflix - search engine for movies and series - <span class="yellow">for MyLead</span></h4>
-            <p class="details-desc">With <span class="yellow">other</span> developer i was responsible for makeing <span class="yellow">front.</span></p>
-            <p class="details-desc">year of execution - <span class="yellow">2020</span></p>
+            <h3 class="details-title" data-i18n="projects.cdaFlix.title">CDAflix</h3>
+            <h4 class="details-subtitle" data-i18n="projects.cdaFlix.description">CDAflix - search engine for movies and series - <span class="yellow">for MyLead</span></h4>
+            <p class="details-desc" data-i18n="projects.cdaFlix.responsibility">With <span class="yellow">other</span> developer i was responsible for makeing <span class="yellow">front.</span></p>
+            <p class="details-desc" data-i18n="projects.general.execution2">year of execution - <span class="yellow">2020</span></p>
           </div>
           <div class="view-project">
             <a class="no-display" href="https://github.com/krzysztof-siek/portfolio-new" target="_blank" class="code"> <i class="fas fa-code"></i>GitHub<a>
@@ -275,10 +286,10 @@
             <img src="./img/projects/hangman.png" alt="hangman image">
           </div>
           <div class="details">
-            <h3 class="details-title">Hangman</h3>
-            <h4 class="details-subtitle">Hangman- popular game made just for fun</h4>
-            <p class="details-desc"><span class="yellow">Full responsible</span> for code and deploy</p>
-            <p class="details-desc">year of execution - <span class="yellow">2022</span></p>
+            <h3 class="details-title" data-i18n="projects.hangman.title">Hangman</h3>
+            <h4 class="details-subtitle" data-i18n="projects.hangman.description">Hangman- popular game made just for fun</h4>
+            <p class="details-desc" data-i18n="projects.hangman.responsibility"><span class="yellow">Full responsible</span> for code and deploy</p>
+            <p class="details-desc" data-i18n="projects.hangman.execution">year of execution - <span class="yellow">2022</span></p>
           </div>
           <div class="view-project">
             <a href="https://github.com/krzysztof-siek/hangman_game" target="_blank" class="code"> <i class="fas fa-code"></i>GitHub<a>
@@ -291,10 +302,10 @@
             <img src="./img/projects/cyberpunk.png" alt="cyberpunk image">
           </div>
           <div class="details">
-            <h3 class="details-title">Cyberpunk</h3>
-            <h4 class="details-subtitle">Cyberpunk - advertising page - <span class="yellow">for MyLead</span></h4>
-            <p class="details-desc"><span class="yellow"> Main person</span> responsible for codeing front</p>
-            <p class="details-desc">year of execution - <span class="yellow">2020</span></p>
+            <h3 class="details-title" data-i18n="projects.cyberpunk.title">Cyberpunk</h3>
+            <h4 class="details-subtitle" data-i18n="projects.cyberpunk.description">Cyberpunk - advertising page - <span class="yellow">for MyLead</span></h4>
+            <p class="details-desc" data-i18n="projects.general.responsibility"><span class="yellow"> Main person</span> responsible for codeing front</p>
+            <p class="details-desc" data-i18n="projects.general.execution2">year of execution - <span class="yellow">2020</span></p>
           </div>
           <div class="view-project">
             <a class="no-display" href="https://github.com/krzysztof-siek/portfolio-new" target="_blank" class="code"> <i class="fas fa-code"></i>GitHub<a>
@@ -307,10 +318,10 @@
             <img src="./img/projects/date.png" alt="date image">
           </div>
           <div class="details">
-            <h3 class="details-title">Porównywarka portali randkowych</h3>
-            <h4 class="details-subtitle">Porównywarka portali randkowych - comparison of dating sites - <span class="yellow">for MyLead</span></h4>
-            <p class="details-desc"><span class="yellow"> Main person</span> responsible for codeing front</p>
-            <p class="details-desc">year of execution - <span class="yellow">2020</span></p>
+            <h3 class="details-title" data-i18n="projects.dateZone.title">Porównywarka portali randkowych</h3>
+            <h4 class="details-subtitle" data-i18n="projects.dateZone.description">Porównywarka portali randkowych - comparison of dating sites - <span class="yellow">for MyLead</span></h4>
+            <p class="details-desc" data-i18n="projects.general.responsibility"><span class="yellow"> Main person</span> responsible for codeing front</p>
+            <p class="details-desc" data-i18n="projects.general.execution2">year of execution - <span class="yellow">2020</span></p>
           </div>
           <div class="view-project">
             <a class="no-display" href="https://github.com/krzysztof-siek/portfolio-new" target="_blank" class="code"> <i class="fas fa-code"></i>GitHub<a>
@@ -323,10 +334,10 @@
             <img src="./img/projects/loan.png" alt="loan image">
           </div>
           <div class="details">
-            <h3 class="details-title">Ekspress pozyczka</h3>
-            <h4 class="details-subtitle">Ekspress pozyczka - best loan ranking - <span class="yellow">for MyLead</span></h4>
-            <p class="details-desc"><span class="yellow"> Main person</span> responsible for codeing front</p>
-            <p class="details-desc">year of execution - <span class="yellow">2020</span></p>
+            <h3 class="details-title" data-i18n="projects.loans.title">Ekspress pozyczka</h3>
+            <h4 class="details-subtitle" data-i18n="projects.loans.description">Ekspress pozyczka - best loan ranking - <span class="yellow">for MyLead</span></h4>
+            <p class="details-desc" data-i18n="projects.general.responsibility"><span class="yellow"> Main person</span> responsible for codeing front</p>
+            <p class="details-desc" data-i18n="projects.general.execution2">year of execution - <span class="yellow">2020</span></p>
           </div>
           <div class="view-project">
             <a class="no-display" href="https://github.com/krzysztof-siek/portfolio-new" target="_blank" class="code"> <i class="fas fa-code"></i>GitHub<a>
@@ -339,10 +350,10 @@
             <img src="./img/projects/casino.png" alt="casino image">
           </div>
           <div class="details">
-            <h3 class="details-title">Casino Rank</h3>
-            <h4 class="details-subtitle">Casino rank - ranking of the best online casinos - <span class="yellow">for MyLead</span></h4>
-            <p class="details-desc"><span class="yellow"> Main person</span> responsible for codeing front</p>
-            <p class="details-desc">year of execution - <span class="yellow">2020</span></p>
+            <h3 class="details-title" data-i18n="projects.casino.title">Casino Rank</h3>
+            <h4 class="details-subtitle" data-i18n="projects.casino.description">Casino rank - ranking of the best online casinos - <span class="yellow">for MyLead</span></h4>
+            <p class="details-desc" data-i18n="projects.general.responsibility"><span class="yellow"> Main person</span> responsible for codeing front</p>
+            <p class="details-desc" data-i18n="projects.general.execution2">year of execution - <span class="yellow">2020</span></p>
           </div>
           <div class="view-project">
             <a class="no-display" href="https://github.com/krzysztof-siek/portfolio-new" target="_blank" class="code"> <i class="fas fa-code"></i>GitHub<a>
@@ -355,12 +366,12 @@
             <img src="./img/projects/NewPortfolio.jpg" alt="">
           </div>
           <div class="details">
-            <h3 class="details-title">My Portfolio</h3>
-            <h4 class="details-subtitle">My new portfolio project. You are here</h4>
-            <p class="details-desc">Technologies used: <span class="yellow">HTML</span> , <span class="yellow"> CSS</span>, <span class="yellow"> JS</span>, <span class="yellow"> Sass
+            <h3 class="details-title" data-i18n="projects.portfolio.title">My Portfolio</h3>
+            <h4 class="details-subtitle" data-i18n="projects.portfolio.description">My new portfolio project. You are here</h4>
+            <p class="details-desc" data-i18n="projects.portfolio.technologies">Technologies used: <span class="yellow">HTML</span> , <span class="yellow"> CSS</span>, <span class="yellow"> JS</span>, <span class="yellow"> Sass
               </span>. libraries JS - <span class="yellow"> Swipper </span>
               - for Slider and <span class="yellow"> Gumshoe</span> - ScrollSpy </p>
-            <p class="details-desc">year of execution - <span class="yellow">2020</span></p>
+            <p class="details-desc" data-i18n="projects.general.execution2">year of execution - <span class="yellow">2020</span></p>
           </div>
           <div class="view-project">
             <a href="https://github.com/krzysztof-siek/portfolio-new" target="_blank" class="code"> <i class="fas fa-code"></i>GitHub<a>
@@ -470,7 +481,7 @@
         </div>
       </div>
       <div class="swipe-sideways"><i class="fas fa-long-arrow-alt-left"></i>
-        <p> swipe sideways</p> <i class="fas fa-long-arrow-alt-right"></i>
+        <p data-i18n="projects.swipe"> swipe sideways</p> <i class="fas fa-long-arrow-alt-right"></i>
       </div>
       <div class="swiper-pagination">
       </div>
@@ -484,8 +495,8 @@
           <img src="./img/developer-photo/hireMe-img.png" alt="">
         </div>
         <div class="jumbo-info">
-          <h5 class="jumbo-title">I'm avaiable for Freelancer projects!</h5>
-          <h4 class="jumbo-subtitle">If you have any projects in mind, don't hesitate to contact me</h4>
+          <h5 class="jumbo-title" data-i18n="jumbotron.title">I'm avaiable for Freelancer projects!</h5>
+          <h4 class="jumbo-subtitle" data-i18n="jumbotron.subtitle">If you have any projects in mind, don't hesitate to contact me</h4>
           <a href="#contact" class="btn anim" id="animBtn2">Hire me!</a>
         </div>
       </div>
@@ -496,24 +507,24 @@
   <section class="features" id="features">
     <div class="section-container">
       <div class="row">
-        <h3 class="row-title">Features</h3>
-        <h4 class="row-subtitle"> Some of my features needed in programming job</h4>
+        <h3 class="row-title" data-i18n="features.title">Features</h3>
+        <h4 class="row-subtitle" data-i18n="features.subtitle">Some of my features needed in programming job</h4>
       </div>
       <div class="new-container">
         <div class="features-icon">
-          <h5 class="features-name">Punctuality</h5>
+          <h5 class="features-name" data-i18n="features.punctuality">Punctuality</h5>
           <img src="./img/features-icons/calendar.png" alt="">
         </div>
         <div class="features-icon">
-          <h5 class="features-name">Precision</h5>
+          <h5 class="features-name" data-i18n="features.precision">Precision</h5>
           <img src="./img/features-icons/project.png" alt="">
         </div>
         <div class="features-icon">
-          <h5 class="features-name">Flexibility</h5>
+          <h5 class="features-name" data-i18n="features.flexibility">Flexibility</h5>
           <img src="./img/features-icons/elastic.png" alt="">
         </div>
         <div class="features-icon">
-          <h5 class="features-name">Reliability</h5>
+          <h5 class="features-name" data-i18n="features.reliability">Reliability</h5>
           <img src="./img/features-icons/teacher.png" alt="">
         </div>
       </div>
@@ -523,8 +534,8 @@
   <section class="contact" id="contact">
     <div class="section-container">
       <div class="row">
-        <h3 class="row-title">Contact</h3>
-        <h4 class="row-subtitle">Get in touch!</h4>
+        <h3 class="row-title" data-i18n="contact.title">Contact</h3>
+        <h4 class="row-subtitle" data-i18n="contact.subtitle">Get in touch!</h4>
       </div>
       <div class="contact-details">
         <div class="photo">
@@ -532,7 +543,7 @@
           <img src="./img/developer-photo/contact-mob-img.png" class="img2" alt="">
         </div>
         <div class="contact-icon">
-          <h4 class="contact-info"><i class="fas fa-phone-alt "></i>Phone</h4>
+          <h4 class="contact-info" data-i18n="contact.phone"><i class="fas fa-phone-alt "></i>Phone</h4>
           <h4 class="contact-info-small">663-271-178</h4>
         </div>
         <div class="contact-icon">
@@ -568,8 +579,8 @@
             <div data-netlify-recaptcha="true"></div>
           </div>
           <div data-netlify-recaptcha="true" style="margin-top:-30px"></div>
-          <button class="btn btn-small " type="submit">Sent now</button>
-          <p class="recaptcha">Please fill reCaptcha</p>
+          <button class="btn btn-small " type="submit" data-i18n="contact.sentNow">Sent now</button>
+          <p class="recaptcha" data-i18n="contact.fillCaptcha">Please fill reCaptcha</p>
         </form>
     </div>
   </section>
@@ -588,11 +599,6 @@
       </div>
     </div>
   </footer>
-
-
-  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/gumshoe/dist/gumshoe.polyfills.min.js"></script>
-  <script src="./js/swiper.min.js"></script>
-  <script src="./js/script.js" type="module"></script>
 </body>
 
 </html>

@@ -1,0 +1,120 @@
+{
+  "key": "Witaj świecie",
+  "menu": {
+    "home": "Home",
+    "about": "O mnie",
+    "skills": "Umiejętności",
+    "projects": "Projekty",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "text1": "jestem <span>Krzysiek</span>"
+  },
+  "about": {
+    "title": "O mnie",
+    "subtitle": "Kilka słów o mnie...",
+    "info": "Mam na imię Krzysztof i mieszkam w Poznaniu. Jestem Freelancerem / Front-end Developerem. Tworzę nowoczesne strony internetowe, wykorzystując HTML, CSS, JS oraz wiele frameworków. Moje strony są zawsze tworzone z dbałością o najdrobniejsze szczegóły i semantykę. Jako perfekcjonista przywiązuję dużą wagę do jakości kodu. Nieustannie dążę do rozwoju i ulepszania moich umiejętności, aby moje projekty były coraz lepsze.",
+    "info2": "Zdecydowany, niezawodny, pracujący z pełnym zaangażowaniem.",
+    "cooperation": "Jeśli jesteś zainteresowany współpracą, proszę o kontakt!",
+    "modalText": "Jeśli jesteś zainteresowany współpracą i chciałbyś otrzymać moje CV, prosze użyj formularz kontaktu",
+    "modalRegards": "Pozdrawiam"
+  },
+  "interests": {
+    "title": "Zainteresowania:",
+    "subtitle": "Bo życie to nie tylko codowanie",
+    "travels": "Podróże",
+    "music": "Muzuka",
+    "bike": "Rower",
+    "gym": "Siłownia"
+  },
+  "skills": {
+    "title": "Umiejętności",
+    "subtitle": "Technologie i narzędzia których używam na codzień"
+  },
+  "projects": {
+    "title": "Projekty",
+    "subtitle": "Lista moich ostatnich projektów",
+    "swipe": " przeciągnij w bok ",
+    "vodPlus": {
+      "title": "VODplus",
+      "description": "VODplus - wyszukiwarka filmów i seriali - <span class=\"yellow\">dla MyLead</span>",
+      "responsibility": "Byłem <span class=\"yellow\"> odpowiedzialny za zakodowanie </span> większości elementów na <span class=\"yellow\">froncie</span> ",
+      "execution": "rok wykonania - <span class=\"yellow\">2021</span>"
+    },
+    "promoLovers": {
+      "title": "PromoLovers",
+      "description": "PromoLovers - Wyszukiwarka promocji i kuponów promocyjnych - <span class=\"yellow\">dla MyLead</span>"
+    },
+    "influencers": {
+      "title": "Influencerzy MyLead",
+      "description": "Influencerzy - strona dedykowana influencerom - <span class=\"yellow\">dla MyLead</span>"
+    },
+    "zamiensms": {
+      "title": "ZamienSms",
+      "description": "ZamienSms - Strona, na której możesz wymienić SMS-y na pieniądze - <span class=\"yellow\">dla MyLead</span>",
+      "responsibility": "Byłem odpowiedzialny za <span class=\"yellow\">odświeżenie projektu</span> strony głównej widocznej przed zalogowaniem"
+    },
+    "cdaFlix": {
+      "title": "CDAflix",
+      "description": "CDAflix - wyszukiwarka filmów i seriali - <span class=\"yellow\">dla MyLead</span>",
+      "responsibility": "Razem z <span class=\"yellow\">innym</span> developerem byłem odpowiedzialny za wykonanie <span class=\"yellow\">frontu.</span>"
+    },
+    "hangman": {
+      "title": "Wisielec",
+      "description": "Wisielec – popularna gra stworzona dla zabawy”",
+      "responsibility": "<span class=\"yellow\">Pełna odpowiedzialność</span> za kod i wdrożenie",
+      "execution": "rok wykonania - <span class=\"yellow\">2022</span>"
+    },
+    "cyberpunk": {
+      "title": "Cyberpunk",
+      "description": "Cyberpunk - strona reklamowa - <span class=\"yellow\">dla MyLead</span>"
+    },
+    "dateZone": {
+      "title": "Porównywarka portali randkowych",
+      "description": "Porównywarka portali randkowych - porównanie serwisów randkowych - <span class=\"yellow\">dla MyLead</span>"
+    },
+    "loans": {
+      "title": "Ekspress pozyczka",
+      "description": "Ekspress pozyczka - ranking najlepszych kredytów - <span class=\"yellow\">dla MyLead</span>"
+    },
+    "casino": {
+      "title": "Casino Rank",
+      "description": "Casino rank - ranking najlepszych kasyn - <span class=\"yellow\">dla MyLead</span>"
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "description": "Mój nowy projekt portfolio. Jesteś tutaj",
+      "technologies": "Użyte technologie: <span class=\"yellow\">HTML</span> , <span class=\"yellow\"> CSS</span>, <span class=\"yellow\"> JS</span>, <span class=\"yellow\"> Sass\n </span>. biblioteki JS - <span class=\"yellow\"> Swipper </span>\n - dla slajdów i <span class=\"yellow\"> Gumshoe</span> - ScrollSpy"
+    },
+    "general": {
+      "responsibility": "Byłem <span class=\"yellow\"> główną osobą </span> odpowiedzialną za realizację frontu</span> ",
+      "execution": "rok wykonania - <span class=\"yellow\">2021</span>",
+      "execution2": "rok wykonania - <span class=\"yellow\">2020</span>"
+    }
+  },
+  "jumbotron": {
+    "title": "Jestem dostępny jako freelancer!",
+    "subtitle": "Jeśli masz jakiś projekt w planach, nie wahaj się ze mną skontaktować."
+  },
+  "features": {
+    "title": "Cechy",
+    "subtitle": "Niektóre z moich cech potrzebnych w pracy programisty",
+    "punctuality": "Punktualny",
+    "precision": "Precyzyjny",
+    "flexibility": "Elastyczny",
+    "reliability": "Niezawodny"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Pozostańmy w kontakcie!",
+    "phone": "<i class=\"fas fa-phone-alt \"></i>Telefon",
+    "name": "Nazwa",
+    "message": "Wiadomość",
+    "sentNow": "Wyślij",
+    "fillCaptcha": "Wypełnij prosze reCaptcha"
+  },
+  "buttons": {
+    "downloadCv": "Pobierz CV",
+    "projects": "Projekty"
+  }
+}
