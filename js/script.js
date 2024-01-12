@@ -1,4 +1,3 @@
-
 import {
     showBackToUpButton,
     toggleNavLinks,
@@ -20,7 +19,7 @@ window.addEventListener('load', (event) => {
         .init({
             lng: 'pl',
             backend: {
-                loadPath: '/assets/{{lng}}.json'
+                loadPath: '../assets/{{lng}}.json'
             }
         }, function(err, t) {
             updatePlaceholders();
