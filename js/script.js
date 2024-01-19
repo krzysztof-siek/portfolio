@@ -14,12 +14,21 @@ import {
 
 window.addEventListener('load', (event) => {
 
+  var loadPath;
+  if (window.location.hostname.includes('github.io')) {
+    loadPath = '/portfolio/assets/{{lng}}.json';
+    console.log('github');
+  } else {
+    loadPath = '../assets/{{lng}}.json';
+    console.log('nie github');
+  }
+
     i18next
         .use(i18nextHttpBackend)
         .init({
             lng: 'pl',
             backend: {
-                loadPath: '/portfolio/assets/{{lng}}.json'
+                loadPath: loadPath
             }
         }, function(err, t) {
             updatePlaceholders();
@@ -196,7 +205,9 @@ window.addEventListener('load', (event) => {
 
 window.onload = function() {
   var recaptcha = document.forms["contact-form"]["g-recaptcha-response"];
-  recaptcha.required = true;
+  if (recaptcha.required) {
+    recaptcha.required = true;
+  }
   recaptcha.oninvalid = function(e) {
     const error = document.querySelector('.recaptcha'); 
     error.classList.add('show');
