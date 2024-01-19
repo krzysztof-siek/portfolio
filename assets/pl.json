@@ -13,8 +13,8 @@
   "about": {
     "title": "O mnie",
     "subtitle": "Kilka słów o mnie...",
-    "info": "Mam na imię Krzysztof i mieszkam w Poznaniu. Jestem Freelancerem / Front-end Developerem. Tworzę nowoczesne strony internetowe, wykorzystując HTML, CSS, JS oraz wiele frameworków. Moje strony są zawsze tworzone z dbałością o najdrobniejsze szczegóły i semantykę. Jako perfekcjonista przywiązuję dużą wagę do jakości kodu. Nieustannie dążę do rozwoju i ulepszania moich umiejętności, aby moje projekty były coraz lepsze.",
-    "info2": "Zdecydowany, niezawodny, pracujący z pełnym zaangażowaniem.",
+    "info": "Mam na imię Krzysztof i mieszkam w Poznaniu. Jako front-end developer z ponad 4-letnim doświadczeniem, specjalizuję się w tworzeniu nowoczesnych aplikacji webowych, wykorzystując framework Angular. Moje projekty łączą estetykę, funkcjonalność i intuicyjność, są zawsze tworzone z dbałością o najdrobniejsze szczegóły i semantykę. Jako perfekcjonista, przywiązuję dużą wagę do jakości kodu. Nieustannie dążę do rozwoju i ulepszania moich umiejętności, co umożliwia mi efektywną pracę w zespołach i adaptację do zmiennych wymagań projektów, aby moje prace były coraz lepsze.",
+    "info2": "Praktyczny, innowacyjny, niezawodny, pracujący z pełnym zaangażowaniem.",
     "cooperation": "Jeśli jesteś zainteresowany współpracą, proszę o kontakt!",
     "modalText": "Jeśli jesteś zainteresowany współpracą i chciałbyś otrzymać moje CV, prosze użyj formularz kontaktu",
     "modalRegards": "Pozdrawiam"
@@ -30,7 +30,7 @@
   "skills": {
     "title": "Umiejętności",
     "subtitle": "Technologie i narzędzia których używam na codzień",
-    "text": "Jako wykwalifikowany programista stron internetowych, specjalizuję się w użyciu technologii, takich jak HTML, CSS, TypeScript i Angular, aby tworzyć dynamiczne i responsywne aplikacje webowe. W projektowaniu interfejsów użytkownika stosuję Materials UI oraz Bootstrap, co zapewnia zarówno efektywność, jak i estetyczny wygląd. W mojej codziennej pracy kluczowe są Docker i REST API, które umożliwiają skuteczną i niezawodną komunikację z serwerami. Do zarządzania projektami i pracy zespołowej nieodzowne są narzędzia takie jak Git i Jira, które pozwalają na sprawną organizację i koordynację działań."
+    "text": "Jako wykwalifikowany programista, specjalizuję się w użyciu technologii, takich jak HTML, CSS, TypeScript i Angular, aby tworzyć dynamiczne i responsywne aplikacje webowe. W projektowaniu interfejsów użytkownika stosuję Materials UI oraz Bootstrap, co zapewnia zarówno efektywność, jak i estetyczny wygląd. W mojej codziennej pracy kluczowe są Docker i REST API, które umożliwiają skuteczną i niezawodną komunikację z serwerami. Do zarządzania projektami i pracy zespołowej nieodzowne są narzędzia takie jak Git i Jira, które pozwalają na sprawną organizację i koordynację działań."
   },
   "projects": {
     "title": "Projekty",
