@@ -1,120 +1,120 @@
 {
-  "key": "Hello World",
+  "key": "Witaj świecie",
   "menu": {
     "home": "Home",
-    "about": "About",
-    "skills": "Skills",
-    "projects": "Projects",
-    "contact": "Contact"
+    "about": "O mnie",
+    "skills": "Umiejętności",
+    "projects": "Projekty",
+    "contact": "Kontakt"
   },
   "home": {
-    "text1": "I'm <span>Krzysiek</span>"
+    "text1": "Jestem <span>Krzysiek</span>"
   },
   "about": {
-    "title": "About",
-    "subtitle": "Read about me...",
-    "info": "My name is Krzysztof and i live in Poznań. I'm a Freelancer / Front-end\n Developer.\n I create modern websites using Html, Css, Js and many frameworks. My pages are always\n crafted with attention to finer details and care of semantics. As a perfectionist I attach\n grate importance to the quality of the code. I constantly strive to develop and improve my\n skills to make my projects even better and better.",
-    "info2": "Determined, reliable, working with full commitment",
-    "cooperation": "If you are interested in cooperation, please contact me!",
-    "modalText": "If you are a recruiter and would like to receive my CV, please use the contact form.",
-    "modalRegards": "Best regards"
+    "title": "O mnie",
+    "subtitle": "Kilka słów o mnie...",
+    "info": "Mam na imię Krzysztof i mieszkam w Poznaniu. Jestem Freelancerem / Front-end Developerem. Tworzę nowoczesne strony internetowe, wykorzystując HTML, CSS, JS oraz wiele frameworków. Moje strony są zawsze tworzone z dbałością o najdrobniejsze szczegóły i semantykę. Jako perfekcjonista przywiązuję dużą wagę do jakości kodu. Nieustannie dążę do rozwoju i ulepszania moich umiejętności, aby moje projekty były coraz lepsze.",
+    "info2": "Zdecydowany, niezawodny, pracujący z pełnym zaangażowaniem.",
+    "cooperation": "Jeśli jesteś zainteresowany współpracą, proszę o kontakt!",
+    "modalText": "Jeśli jesteś zainteresowany współpracą i chciałbyś otrzymać moje CV, prosze użyj formularz kontaktu",
+    "modalRegards": "Pozdrawiam"
   },
   "interests": {
-    "title": "Interests:",
-    "subtitle": "Because life is not just coding",
-    "travels": "Travels",
-    "music": "Music",
-    "bike": "Bike",
-    "gym": "Gym"
+    "title": "Zainteresowania:",
+    "subtitle": "Bo życie to nie tylko kodowanie",
+    "travels": "Podróże",
+    "music": "Muzuka",
+    "bike": "Rower",
+    "gym": "Siłownia"
   },
   "skills": {
-    "title": "Skills",
-    "subtitle": "Technologies and tools that I use on a daily basis"
+    "title": "Umiejętności",
+    "subtitle": "Technologie i narzędzia których używam na codzień"
   },
   "projects": {
-    "title": "Projects",
-    "subtitle": "List of my recently projects",
-    "swipe": " swipe sideways ",
+    "title": "Projekty",
+    "subtitle": "Lista moich ostatnich projektów",
+    "swipe": " przeciągnij w bok ",
     "vodPlus": {
       "title": "VODplus",
-      "description": "VODplus - search engine for movies and series - <span class=\"yellow\">for MyLead</span>",
-      "responsibility": "I was <span class=\"yellow\"> responsible for coding </span> most of the elements on the <span class=\"yellow\">front</span> ",
-      "execution": "year of execution - <span class=\"yellow\">2021</span>"
+      "description": "VODplus - wyszukiwarka filmów i seriali - <span class=\"yellow\">dla MyLead</span>",
+      "responsibility": "Byłem <span class=\"yellow\"> odpowiedzialny za zakodowanie </span> większości elementów na <span class=\"yellow\">froncie</span> ",
+      "execution": "rok wykonania - <span class=\"yellow\">2021</span>"
     },
     "promoLovers": {
       "title": "PromoLovers",
-      "description": "PromoLovers - Search engine for promotional coupons and promotions - <span class=\"yellow\">for MyLead</span>"
+      "description": "PromoLovers - Wyszukiwarka promocji i kuponów promocyjnych - <span class=\"yellow\">dla MyLead</span>"
     },
     "influencers": {
-      "title": "Influencers MyLead",
-      "description": "Influencers - website dedicated to influencers - <span class=\"yellow\">for MyLead</span>"
+      "title": "Influencerzy MyLead",
+      "description": "Influencerzy - strona dedykowana influencerom - <span class=\"yellow\">dla MyLead</span>"
     },
     "zamiensms": {
       "title": "ZamienSms",
-      "description": "ZamienSms - Page where you can exchange SMS for money - <span class=\"yellow\">for MyLead</span>",
-      "responsibility": "I was responsible for <span class=\"yellow\">refreshing the design</span> of main page visible before logging in"
+      "description": "ZamienSms - Strona, na której możesz wymienić SMS-y na pieniądze - <span class=\"yellow\">dla MyLead</span>",
+      "responsibility": "Byłem odpowiedzialny za <span class=\"yellow\">odświeżenie projektu</span> strony głównej widocznej przed zalogowaniem"
     },
     "cdaFlix": {
       "title": "CDAflix",
-      "description": "CDAflix - search engine for movies and series - <span class=\"yellow\">for MyLead</span>",
-      "responsibility": "With <span class=\"yellow\">other</span> developer i was responsible for makeing <span class=\"yellow\">front.</span>"
+      "description": "CDAflix - wyszukiwarka filmów i seriali - <span class=\"yellow\">dla MyLead</span>",
+      "responsibility": "Razem z <span class=\"yellow\">innym</span> developerem byłem odpowiedzialny za wykonanie <span class=\"yellow\">frontu.</span>"
     },
     "hangman": {
-      "title": "Hangman",
-      "description": "Hangman- popular game made just for fun",
-      "responsibility": "<span class=\"yellow\">Full responsible</span> for code and deploy",
-      "execution": "year of execution - <span class=\"yellow\">2022</span>"
+      "title": "Wisielec",
+      "description": "Wisielec – popularna gra stworzona dla zabawy”",
+      "responsibility": "<span class=\"yellow\">Pełna odpowiedzialność</span> za kod i wdrożenie",
+      "execution": "rok wykonania - <span class=\"yellow\">2022</span>"
     },
     "cyberpunk": {
       "title": "Cyberpunk",
-      "description": "Cyberpunk - advertising page - <span class=\"yellow\">for MyLead</span>"
+      "description": "Cyberpunk - strona reklamowa - <span class=\"yellow\">dla MyLead</span>"
     },
     "dateZone": {
-      "title": "Dating site comparison",
-      "description": "Dating site comparison site - comparison of dating sites - <span class=\"yellow\">for MyLead</span>"
+      "title": "Porównywarka portali randkowych",
+      "description": "Porównywarka portali randkowych - porównanie serwisów randkowych - <span class=\"yellow\">dla MyLead</span>"
     },
     "loans": {
-      "title": "Express loan",
-      "description": "Express loan - best loan ranking - <span class=\"yellow\">for MyLead</span>"
+      "title": "Ekspress pozyczka",
+      "description": "Ekspress pozyczka - ranking najlepszych kredytów - <span class=\"yellow\">dla MyLead</span>"
     },
     "casino": {
       "title": "Casino Rank",
-      "description": "Casino rank - ranking of the best online casinos - <span class=\"yellow\">for MyLead</span>"
+      "description": "Casino rank - ranking najlepszych kasyn - <span class=\"yellow\">dla MyLead</span>"
     },
     "portfolio": {
-      "title": "My Portfolio",
-      "description": "My new portfolio project. You are here",
-      "technologies": "Technologies used: <span class=\"yellow\">HTML</span> , <span class=\"yellow\"> CSS</span>, <span class=\"yellow\"> JS</span>, <span class=\"yellow\"> Sass\n              </span>. libraries JS - <span class=\"yellow\"> Swipper </span>\n - for Slider and <span class=\"yellow\"> Gumshoe</span> - ScrollSpy"
+      "title": "Portfolio",
+      "description": "Mój nowy projekt portfolio. Jesteś tutaj",
+      "technologies": "Użyte technologie: <span class=\"yellow\">HTML</span> , <span class=\"yellow\"> CSS</span>, <span class=\"yellow\"> JS</span>, <span class=\"yellow\"> Sass\n </span>. biblioteki JS - <span class=\"yellow\"> Swipper </span>\n - dla slajdów i <span class=\"yellow\"> Gumshoe</span> - ScrollSpy"
     },
     "general": {
-      "responsibility": "I was the <span class=\"yellow\"> main person </span> responsible for the implementation of the front</span> ",
-      "execution": "year of execution - <span class=\"yellow\">2021</span>",
-      "execution2": "year of execution - <span class=\"yellow\">2020</span>"
+      "responsibility": "Byłem <span class=\"yellow\"> główną osobą </span> odpowiedzialną za realizację frontu</span> ",
+      "execution": "rok wykonania - <span class=\"yellow\">2021</span>",
+      "execution2": "rok wykonania - <span class=\"yellow\">2020</span>"
     }
   },
   "jumbotron": {
-    "title": "I'm avaiable for Freelancer projects!",
-    "subtitle": "If you have any projects in mind, don't hesitate to contact me"
+    "title": "Jestem dostępny jako freelancer!",
+    "subtitle": "Jeśli masz jakiś projekt w planach, nie wahaj się ze mną skontaktować."
   },
   "features": {
-    "title": "Features",
-    "subtitle": "Some of my features needed in programming job",
-    "punctuality": "Punctuality",
-    "precision": "Precision",
-    "flexibility": "Flexibility",
-    "reliability": "Reliability"
+    "title": "Cechy",
+    "subtitle": "Niektóre z moich cech potrzebnych w pracy programisty",
+    "punctuality": "Punktualny",
+    "precision": "Precyzyjny",
+    "flexibility": "Elastyczny",
+    "reliability": "Niezawodny"
   },
   "contact": {
-    "title": "Contact",
-    "subtitle": "Get in touch!",
-    "phone": "<i class=\"fas fa-phone-alt \"></i>Phone",
-    "name": "Name",
-    "message": "Message",
-    "sentNow": "Sent now",
-    "fillCaptcha": "Please fill reCaptcha"
+    "title": "Kontakt",
+    "subtitle": "Pozostańmy w kontakcie!",
+    "phone": "<i class=\"fas fa-phone-alt \"></i>Telefon",
+    "name": "Nazwa",
+    "message": "Wiadomość",
+    "sentNow": "Wyślij",
+    "fillCaptcha": "Wypełnij prosze reCaptcha"
   },
   "buttons": {
-    "downloadCv": "Download CV",
-    "projects": "My Projects"
+    "downloadCv": "Pobierz CV",
+    "projects": "Projekty"
   }
 }
