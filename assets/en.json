@@ -29,7 +29,8 @@
   },
   "skills": {
     "title": "Skills",
-    "subtitle": "Technologies and tools that I use on a daily basis"
+    "subtitle": "Technologies and tools that I use on a daily basis",
+    "text": "As a skilled web developer, I specialize in using technologies such as HTML, CSS, TypeScript, and Angular to create dynamic and responsive web applications. In designing user interfaces, I apply Materials UI and Bootstrap, ensuring both efficiency and aesthetic appeal. Docker and REST API are crucial in my daily work, enabling effective and reliable communication with servers. Tools like Git and Jira are indispensable for project management and team collaboration, allowing for smooth organization and coordination."
   },
   "projects": {
     "title": "Projects",

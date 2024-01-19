@@ -29,7 +29,8 @@
   },
   "skills": {
     "title": "Umiejętności",
-    "subtitle": "Technologie i narzędzia których używam na codzień"
+    "subtitle": "Technologie i narzędzia których używam na codzień",
+    "text": "Jako wykwalifikowany programista stron internetowych, specjalizuję się w użyciu technologii, takich jak HTML, CSS, TypeScript i Angular, aby tworzyć dynamiczne i responsywne aplikacje webowe. W projektowaniu interfejsów użytkownika stosuję Materials UI oraz Bootstrap, co zapewnia zarówno efektywność, jak i estetyczny wygląd. W mojej codziennej pracy kluczowe są Docker i REST API, które umożliwiają skuteczną i niezawodną komunikację z serwerami. Do zarządzania projektami i pracy zespołowej nieodzowne są narzędzia takie jak Git i Jira, które pozwalają na sprawną organizację i koordynację działań."
   },
   "projects": {
     "title": "Projekty",

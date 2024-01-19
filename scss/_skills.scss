@@ -2,19 +2,18 @@
     background-color: $bgc;
 
     .row-title {
+      --text-after: "Skills";
         &:after {
-            content: "Skills";
+            content: var(--text-after);
         }
     }
 
-    .icons-container {
-        display: flex;
-        flex-wrap: wrap;
+    .skills-text {
         padding: $base-p;
-        margin: 0 auto;
-        justify-content: center;
-        align-items: center;
         width: 80%;
+        font-size: 16px;
+        line-height: 30px;
+        color: white;
 
         @media(min-width:768px) {
             width: 100%;
@@ -22,35 +21,11 @@
 
 
         .skills-single-icon {
-            // margin: 10px;
             border-radius: 50%;
             overflow: hidden;
             height: 100px;
             width: 100px;
-            margin: 20px;
-
-            &.angular {
-              background-color: white;
-              display: flex;  
-              justify-content: center;
-              align-items: center;
-              img {
-              height: 80%;
-              width: 80%;
-              }
-            }
-
-            &:nth-child(7) {
-                background-color: white;
-            }
-
-            &:nth-child(8) {
-                background-color: white;
-            }
-
-            img {
-                width: 100%;
-            }
+            margin: 20px; 
         }
     }
 
@@ -66,41 +41,24 @@
             color: $white;
         }
 
-        .description {
-            line-height: 20px;
-        }
-
         .technology {
-            margin-bottom: 30px;
-            font-size: 24px;
-            line-height: 55px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 18px;
+            margin: 10px 0 5px 0;
         }
-
-        .description {
-            margin-bottom: 100px;
-        }
-
-
 
         .progress-bar {
-            height: 8px;
-            border: 1px solid $bgc2;
+            height: 3px;
             background-color: $white;
-            border-radius: 5px;
+            border-radius: 6px;
 
             .content {
                 width: 80%;
                 height: 100%;
                 background-color: $yellow;
                 position: relative;
-                transition: 1s;
-
-                .procent {
-                    position: absolute;
-                    top: -40px;
-                    right: -30px;
-                    color: $white;
-                }
+                border-radius: 6px;
             }
         }
     }

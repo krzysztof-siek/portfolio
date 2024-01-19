@@ -17,10 +17,8 @@ window.addEventListener('load', (event) => {
   var loadPath;
   if (window.location.hostname.includes('github.io')) {
     loadPath = '/portfolio/assets/{{lng}}.json';
-    console.log('github');
   } else {
     loadPath = '../assets/{{lng}}.json';
-    console.log('nie github');
   }
 
     i18next
@@ -31,13 +29,35 @@ window.addEventListener('load', (event) => {
                 loadPath: loadPath
             }
         }, function(err, t) {
-            updatePlaceholders();
+            updateElements();
         });
 
-    function updatePlaceholders() {
-        document.getElementById('message').setAttribute('placeholder', i18next.t('contact.message'));
-        document.getElementById('name').setAttribute('placeholder', i18next.t('contact.name'));
+    function updateElements() {
+      function setPlaceholder(id, translationKey) {
+        const element = document.getElementById(id);
+        if (element) {
+            element.setAttribute('placeholder', i18next.t(translationKey));
+        }
+      }
+        
+      function setTranslation(id, translationKey) {
+        const rowElement = document.getElementById(id).querySelector('.row-title');
+        if (rowElement) {
+          var translation = i18next.t(translationKey);
+          rowElement.style.setProperty('--text-after', "'" + translation + "'");
+        }
+      }
+
+      setPlaceholder('message', 'contact.message');
+      setPlaceholder('name', 'contact.name');
+      
+      setTranslation('about', 'about.title');
+      setTranslation('skills', 'skills.title');
+      setTranslation('projects', 'projects.title');
+      setTranslation('features', 'features.title'); 
+      setTranslation('contact', 'contact.title');
     }
+
 
     document.querySelectorAll('.lang-change').forEach(function(btn) {
         btn.addEventListener('click', function() {
@@ -53,7 +73,7 @@ window.addEventListener('load', (event) => {
     function changeLanguage(lng) {
         i18next.changeLanguage(lng);
         setTimeout(() => {
-            updatePlaceholders();
+            updateElements();
         }, 100);
     }
 
@@ -127,68 +147,7 @@ window.addEventListener('load', (event) => {
         body.classList.add('blocked')
     })
 
-
-    // skills change content when mouse on
-    const skillsIcons = document.querySelectorAll('.skills-single-icon')
-
-    skillsIcons.forEach(el => el.addEventListener('mouseover', function () {
-        let data = this.getAttribute('data-icon')
-        const technology = document.querySelector('.technology')
-        const description = document.querySelector(".description")
-        const content = document.querySelector('.content')
-        const procent = document.querySelector(".procent")
-        if (data == "html") {
-            technology.textContent = "HTML"
-            description.textContent = "I use tags in accordance with W3C semantics and standards. "
-            content.style = "width: 80%"
-            procent.textContent = "80%"
-
-        } else if (data == "css") {
-            technology.textContent = "CSS"
-            description.textContent = "I use Scss to make the writing code easier to read."
-            content.style = "width: 80%"
-            procent.textContent = "80%"
-
-        } else if (data == "js") {
-            technology.textContent = "JavaScript"
-            description.textContent = "I use JavaScript version ES6 to ensure proper functionality and transparency of the code"
-            content.style = "width: 70%"
-            procent.textContent = "70%"
-
-        } else if (data == "angular") {
-            technology.textContent = "Angular"
-            description.textContent = "I use the Angular framework to make writing code faster and more efficient"
-            content.style = "width: 60%"
-            procent.textContent = "60%"
-
-        } else if (data == "bootstrap") {
-            technology.textContent = "Bootstrap"
-            description.textContent = "I can also use this Css framework"
-            content.style = "width: 80%"
-            procent.textContent = "80%"
-
-        } else if (data == "sass") {
-            technology.textContent = "Sass"
-            description.textContent = "Much cooler code writing using the sass processor"
-            content.style = "width: 70%"
-            procent.textContent = "70%"
-
-        } else if (data == "git") {
-            technology.textContent = "Git i  Github"
-            description.textContent = "A version control system is necessary when working in a larger team. I also keep my projects on Github myself"
-            content.style = "width: 70%"
-            procent.textContent = "70%"
-
-        } else if (data == "rwd") {
-            technology.textContent = "Responsive Web Design"
-            description.textContent = "Nowadays, you need pages to match the device on which they are displayed."
-            content.style = "width: 80%"
-            procent.textContent = "80%"
-        }
-    }))
-
     // button animation 
-
     const $Element = document.getElementById('animBtn');
     const $Element2 = document.getElementById('animBtn2');
 
@@ -205,9 +164,6 @@ window.addEventListener('load', (event) => {
 
 window.onload = function() {
   var recaptcha = document.forms["contact-form"]["g-recaptcha-response"];
-  if (recaptcha.required) {
-    recaptcha.required = true;
-  }
   recaptcha.oninvalid = function(e) {
     const error = document.querySelector('.recaptcha'); 
     error.classList.add('show');

@@ -3,8 +3,9 @@
     padding-bottom: 50px;
 
     .row-title {
+      --text-after: "Projects";
         &:after {
-            content: "Projects";
+            content: var(--text-after);
         }
     }
 

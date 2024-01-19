@@ -2,24 +2,25 @@
     background-color: $bgc2;
 
     .row-title {
+      --text-after: "Contact";
         &:after {
-            content: "Contact";
+            content: var(--text-after);
         }
     }
 
     .contact-details {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         justify-content: space-between;
         padding: $base-p;
 
 
         @media(min-width:768px) {
+            align-items: flex-start;
             flex-direction: row;
             align-items: center;
             margin-bottom: 50px;
-
         }
 
         .photo {
@@ -58,7 +59,16 @@
         .contact-icon {
             margin-bottom: 20px;
             cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
 
+            @media(min-width:768px) {
+              display: block;
+              width: inherit;
+            }
+            
             &:hover {
 
                 .contact-info {

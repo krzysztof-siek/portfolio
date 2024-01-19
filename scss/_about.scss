@@ -2,8 +2,9 @@
     background-color: $bgc2;
 
     .row-title {
+      --text-after: "About";
         &:after {
-            content: "About";
+            content: var(--text-after);
         }
     }
 

@@ -3,8 +3,9 @@
 
 
     .row-title {
+      --text-after: "Features";
         &:after {
-            content: "Features";
+            content: var(--text-after);
         }
     }
 
